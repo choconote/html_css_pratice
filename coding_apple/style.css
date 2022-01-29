@@ -1,0 +1,44 @@
+.nav_items{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.nav_items div{
+    float: left;
+    width: 25%;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main-title{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-title{
+        font-size: 30px;
+    }
+    .product-container div{
+        width: 100%;
+    }
+    .product-container{
+        max-width: 700px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .main-title{
+        font-size: 30px;
+    }
+}
