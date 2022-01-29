@@ -1,0 +1,179 @@
+div, input, textarea{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: brightness(70%) */
+    text-align: center;
+    padding: 1px;
+}
+
+.main-title{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-content{
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+.main-button{
+    padding: 15px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    position: relative;
+    border-radius: 3px;
+    z-index: 5;/* z-index가 높을수록 앞으로 */
+   
+}
+
+.sub-title{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    color: black;
+    background-color: rgb(170, 169, 169);
+    position: relative;
+    top: -40px;
+    left: 0;
+    right: 0;
+   
+}
+
+.form-background{
+    background-color: black;
+    padding: 30px;
+}
+
+.form-white {
+    position: relative;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    color: black;
+    background-color: white;
+  
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#send{
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    background-color: orange;
+    color: white;
+}
+.w-50{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.w-100{
+    width: 100%;
+    padding: 10px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content:space-around;
+    background-color: pink;
+
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 5px;
+}
+
+.nav-container{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: pink;
+    color: white;
+    font-size: 30px;
+}
+
+.nav-item{
+    margin-right: 5px;
+}
+/* rem : 기본 폰트사이즈(16px)에 비례  타이포그래피에 용이*/
+/* em: 내 폰트사이즈의 x배 */
+/* .test{
+    width: 100vw;/* vw : 브라우저 폭에 비례, vh : 브라우저 높이에 비례*/
+    /* height: 100px;
+    background: grey;
+} */ 
+
+.product-container{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.product-container div{
+    float: left;
+    width: 25%;
+    text-align: center;
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .main-title{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-title{
+        font-size: 30px;
+    }
+    .product-container div{
+        width: 100%;
+    }
+    .product-container{
+        max-width: 700px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .main-title{
+        font-size: 30px;
+    }
+}

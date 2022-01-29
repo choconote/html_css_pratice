@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+}
+.blog-content{
+    width: 80%;
+    height: 200px;
+    background-color: cadetblue;
+    float: left;
+    
+    
+}
+
+.blog-img{
+    width: 20%;
+    height: 200px;
+   
+   float: left;
+
+}
+
+
+.picture{
+    float: right;
+}
+
+.blog-profile{
+    width: 20%;
+    display: block;
+    float: left;
+}
+
+.blog-name{
+    float: left;
+}
+
+.container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
