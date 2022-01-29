@@ -1,0 +1,20 @@
+position : absolute 를 적용한 요소 가운데 정렬 
+
+.button {
+  position : absolute; 
+  left : 0;
+  right : 0; 
+  margin-left : auto;
+  margin-right : auto;
+  width : 적절히
+}
+
+
+position 속성은 크게 4개 값이 있습니다
+
+.box {
+  position : static; /* 기준이 엄서요 (좌표적용 불가) */
+  position : relative; /* 기준이 내 원래 위치요 */
+  position : absolute; /* 기준이 내 부모요 */
+  position : fixed; /* 기준이 브라우저 창이요 (viewport) */
+}.
