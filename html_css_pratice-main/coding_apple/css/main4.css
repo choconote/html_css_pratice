@@ -1,0 +1,54 @@
+.cart-background{
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+}
+
+
+.cart-table{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.cart-table th:nth-child(2){
+    width: 400px;
+}
+
+
+.cart-table td,.cart-table th{
+    padding: 15px;
+    border: none;
+    border: 1px solid #c2d3de;
+    border-bottom: 1px solid #c2d3de;
+}
+
+
+.cell-long{
+    width: 700px;
+}
+
+
+.btn{
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: coral;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: chocolate;
+}
+
+.btn:active{
+    background-color: red;
+}
+
+.btn:focus{
+    background-color: cornflowerblue;
+}

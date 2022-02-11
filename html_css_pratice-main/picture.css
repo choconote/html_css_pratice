@@ -1,0 +1,29 @@
+.grid-container2{
+    display: grid;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.grid-container2 img{
+    width: 100%;
+    display: block;
+}
+
+.head{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+
+@media screen and (max-width : 768px) {
+    .head{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .grid-container2{
+        grid-template-columns: 1fr;
+    }
+}

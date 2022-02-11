@@ -1,0 +1,96 @@
+/*transform을 쓰면 좋은 것 - 성능이 좋음, 동작속도, 다른쓰레드에서 처리해줌*/
+.ani-text{
+    text-align: center;
+}
+
+.ani-text:hover{
+    animation-name: left;
+    animation-duration: 1s;
+}
+.twiste{
+    width: 80px;
+    color: #eee;
+    background-color: skyblue;
+    
+}
+
+.twiste:hover{
+    animation-name: twiste;
+    animation-duration: 1s;
+    
+}
+@keyframes twiste {
+    0% { transform: rotate(0deg)}
+    25% { transform: rotate(-8deg)}
+    50% { transform: rotate(8deg)}
+    75% { transform: rotate(-8deg)}
+    100% { transform: rotate(0deg)}
+  } 
+@keyframes left{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.plus{
+    margin: 150px auto;
+    text-align: center;
+    font-size: 70px;
+    width: 84px;
+    cursor: pointer;
+}
+.plus:hover{
+    animation-name: plus;
+    animation-duration: 1s;
+}
+
+
+@keyframes plus {
+    0% { transform: rotate(0deg) }
+    25% { transform: rotate(-15deg) }
+    100% { transform: rotate(45deg) scale(1.5)}
+  } 
+
+.ani-navbar{
+    width: 200px;
+    background: black;
+    color: white;
+    height: 100%;
+    padding: 25px;
+    position: fixed;
+    z-index: 4;
+    text-align: right;
+    transition: all 1s;
+    transform: translateX(-150px);
+    list-style: none;
+}
+.ani-navbar:hover{
+    transform: translateX(0px);
+    text-align: center;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-250px)
+    }
+    50%{
+        transform: translateX(50px) skewX(-30deg);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.ani-navbar:hover p{
+    animation-name: slide;
+    animation-duration: 1s;
+  
+}
